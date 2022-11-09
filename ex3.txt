@@ -1,0 +1,21 @@
+CREATE TABLE Students (
+    id int NOT NULL AUTO_INCREMENT,
+    name text NOT NULL,
+    Age int,
+    address text NOT NULL,
+    PRIMARY KEY (id)
+);
+
+-- insert
+INSERT INTO Students (name, age, address) VALUES ('Иван', '22', 'Moskow');
+INSERT INTO Students (name, age, address) VALUES ('Степан', '20', 'Omsk');
+INSERT INTO Students (name, age, address) VALUES ('Рома', '17', 'Kursk');
+INSERT INTO Students (name, age, address) VALUES ('Костя', '21', 'Moskow');
+INSERT INTO Students (name, age, address) VALUES ('Настя', '18', 'St. Peterburg');
+INSERT INTO Students (name, age, address) VALUES ('Игорь', '23', 'Kazan');
+INSERT INTO Students (name, age, address) VALUES ('Мария', '20', 'Nizhny Novgorod');
+INSERT INTO Students (name, age, address) VALUES ('Катя', '19', 'Vladimyr');
+INSERT INTO Students (name, age, address) VALUES ('Лида', '19', 'Moskow');
+
+-- fetch 
+SELECT * FROM Students WHERE address = 'Moskow';
